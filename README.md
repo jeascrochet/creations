@@ -1,2 +1,0 @@
-# creations
-crochet handmade products
