@@ -193,7 +193,7 @@
     <main>
         <div class="gallery">
     
-        <img src="giftset.jpg" data-caption="kitchen towel holder gift set">;
+        <img src="giftset.jpg" alt="kitchen towel holder gift set" data-caption="kitchen towel holder gift set">
         
         <img src="wineholder - Copy.jpg" alt="Photo 2">
         <p>Crochet Square Earrings 
@@ -238,8 +238,8 @@
 
                 lightboxImg.src = img.src;
 
-               /* lightboxCaption.textContent = img.dataset.caption || "";*/
-                lightboxCaption.textContent = img.alt|| "";
+               lightboxCaption.textContent = img.dataset.caption || "";
+                /*lightboxCaption.textContent = img.alt|| "";*/
                                                  
                 lightbox.classList.add("active");
 
@@ -276,6 +276,7 @@
         &copy; 2025 Jea's Crochet
     </footer>
 </html>
+
 
 
 
