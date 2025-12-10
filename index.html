@@ -9,7 +9,7 @@
     const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzWhMMAXF015D8eMBdqOP6uEig0Q5JW1Z1Qs5_axIMqZE81s1B7x7EbqBPpRpRwi_ek/exec?identifier=jea32ph%40yahoo.com&identifierType=Email&updates=%7B%22status%22:%22active%22%7D%0A"; // Replace with your Web App URL
 
     function updateResponse() {
-      const identifier = document.getElementById("identifier").value.trim();
+      const identifier = document.getElementById("identifier").value;
       const identifierType = document.getElementById("identifierType").value;
       const status = document.getElementById("status").value.trim();
       /*const comments = document.getElementById("comments").value.trim();*/
@@ -256,7 +256,8 @@
         <h1>Welcome to Jea's Crochet</h1>
         <p><h2>Here are my Creations:</h2></p>
     </header>
-<h2>Update Form Response</h2>
+    <main>
+        <h2>Update Form Response</h2>
   <label for="identifierType">Identifier Type:</label><br>
   <select id="identifierType">
     <option value="Email">Email</option>
@@ -264,7 +265,7 @@
   </select><br>
 
   <label for="identifier">Identifier (Email or Timestamp):</label><br>
-  <input type="text" id="identifier"><br>
+  <input type="email" id="identifier"><br>
 
   <label for="status">Status:</label><br>
   <input type="text" id="status"><br>
@@ -273,8 +274,7 @@
   <input type="text" id="comments"><br>-->
 
   <button onclick="updateResponse()">Update Response</button>
-    <main>
-        
+
         <div class="gallery">
     <figure>
          <img src="giftset.jpg" alt="kitchen towel holder gift set" data-caption="kitchen towel holder gift set">
@@ -379,6 +379,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
