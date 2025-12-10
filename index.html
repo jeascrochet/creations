@@ -31,8 +31,9 @@
 
       // Call the Web App
       const url = `${WEB_APP_URL}?identifier=${encodeURIComponent(identifier)}&identifierType=${encodeURIComponent(identifierType)}&updates=${encodeURIComponent(JSON.stringify(updates))}`;
-      alert(url);
+     
       fetch(url)
+           alert(url);
         .then(response => response.text())
         .then(result => alert(result))
         .catch(err => console.error(err));
@@ -377,6 +378,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
