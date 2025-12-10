@@ -12,7 +12,7 @@
       const identifier = document.getElementById("identifier").value.trim();
       const identifierType = document.getElementById("identifierType").value;
       const status = document.getElementById("status").value.trim();
-      const comments = document.getElementById("comments").value.trim();
+      /*const comments = document.getElementById("comments").value.trim();*/
 
       if (!identifier) {
         alert("Please enter an identifier (Email or Timestamp).");
@@ -22,7 +22,7 @@
       // Prepare updates as JSON
       const updates = {};
       if (status) updates["Status"] = status;
-      if (comments) updates["Comments"] = comments;
+      /*if (comments) updates["Comments"] = comments;*/
 
       if (Object.keys(updates).length === 0) {
         alert("No updates specified!");
@@ -254,9 +254,7 @@
         <h1>Welcome to Jea's Crochet</h1>
         <p><h2>Here are my Creations:</h2></p>
     </header>
-
-    <main>
-        <h2>Update Form Response</h2>
+<h2>Update Form Response</h2>
   <label for="identifierType">Identifier Type:</label><br>
   <select id="identifierType">
     <option value="Email">Email</option>
@@ -269,10 +267,12 @@
   <label for="status">Status:</label><br>
   <input type="text" id="status"><br>
 
-  <label for="comments">Comments:</label><br>
-  <input type="text" id="comments"><br>
+  <!--<label for="comments">Comments:</label><br>
+  <input type="text" id="comments"><br>-->
 
   <button onclick="updateResponse()">Update Response</button>
+    <main>
+        
         <div class="gallery">
     <figure>
          <img src="giftset.jpg" alt="kitchen towel holder gift set" data-caption="kitchen towel holder gift set">
@@ -377,6 +377,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
