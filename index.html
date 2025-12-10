@@ -9,7 +9,7 @@
     const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzWhMMAXF015D8eMBdqOP6uEig0Q5JW1Z1Qs5_axIMqZE81s1B7x7EbqBPpRpRwi_ek/exec?identifier=jea32ph%40yahoo.com&identifierType=Email&updates=%7B%22status%22:%22active%22%7D%0A"; // Replace with your Web App URL
 
     function updateResponse() {
-      const identifier = document.getElementById("identifier").value.trim;
+      const identifier = document.getElementById("identifier").value;
       const identifierType = document.getElementById("identifierType").value;
       const status = document.getElementById("status").value.trim();
       /*const comments = document.getElementById("comments").value.trim();*/
@@ -379,6 +379,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
