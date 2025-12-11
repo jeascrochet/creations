@@ -5,41 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <script>
-    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx7MILx4jFp0gpG1o7ILI5wZK-TNsFfTAWezbtt-w96jXFxpcU5EUUQ-EPjCSZ9leP5/exec?identifier=jea32ph%40yahoo.com&identifierType=Email&updates=%7B%22status%22:%22active%22%7D%0A"; // Replace with your Web App URL
-
-    function updateResponse() {
-      const identifier = document.getElementById("identifier").value;
-      const identifierType = document.getElementById("identifierType").value;
-      const status = document.getElementById("status").value.trim();
-      /*const comments = document.getElementById("comments").value.trim();*/
-
-      if (!identifier) {
-        alert("Please enter an identifier (Email or Timestamp).");
-        return;
-      }
-         alert(identifier);
-      // Prepare updates as JSON
-      const updates = {};
-      if (status) updates["Status"] = status;
-      /*if (comments) updates["Comments"] = comments;*/
-
-      if (Object.keys(updates).length === 0) {
-        alert("No updates specified!");
-        return;
-      }
-
-      // Call the Web App
-      const url = `${WEB_APP_URL}?identifier=${encodeURIComponent(identifier)}&identifierType=${encodeURIComponent(identifierType)}&updates=${encodeURIComponent(JSON.stringify(updates))}`;
-     
-      fetch(url)
-         
-        .then(response => response.text())
-        .then(result => alert(result))
-        .catch(err => console.error(err));)
-        
-    }
-  </script>
+    
     <style>
        /* body {
             font-family: Arial, sans-serif;
@@ -257,24 +223,6 @@
         <p><h2>Here are my Creations:</h2></p>
     </header>
     <main>
-        <h2>Update Form Response</h2>
-  <label for="identifierType">Identifier Type:</label><br>
-  <select id="identifierType">
-    <option value="Email">Email</option>
-    <option value="Timestamp">Timestamp</option>
-  </select><br>
-
-  <label for="identifier">Identifier (Email or Timestamp):</label><br>
-  <input type="text" id="identifier"><br>
-
-  <label for="status">Status:</label><br>
-  <input type="text" id="status"><br>
-
-  <!--<label for="comments">Comments:</label><br>
-  <input type="text" id="comments"><br>-->
-
-  <button onclick="updateResponse()">Update Response</button>
-
         <div class="gallery">
     <figure>
          <img src="giftset.jpg" alt="kitchen towel holder gift set" data-caption="kitchen towel holder gift set">
@@ -379,6 +327,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
