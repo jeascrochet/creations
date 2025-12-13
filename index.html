@@ -215,20 +215,6 @@
     </style>
 </head>
 <body>
-<label for="name">Name:</label><input type="text" id="username">
-    <button id="btn">Run it!</button>
-
-<script>
-  document.getElementById("btn").addEventListener("click", doStuff);
-
-  function doStuff(){
-    var uname = document.getElementById("username").value;
-    
-    google.script.run.userClicked(uname);
-    google.script.run.updateFormResponse1(2, "Completed");
-  }
-       
-  </script>
     <header>
         <h1>Welcome to Jea's Crochet</h1>
         <p><h2>Here are my Creations:</h2></p>
@@ -319,18 +305,6 @@
 
     </script>
 
-        <div class="container">
-    <h1>Order Form</h1>
-
-    <!-- Embedded Google Form -->
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLScOD6PStoJGTmG5M-kq39EBG8BpbQeJMgpBdhFmh7dq28X7kw/viewform?embedded=true"
-      allowfullscreen>
-      Loading…
-    </iframe>
-  </div>
-
-
     </main>
 
     <footer>
@@ -338,6 +312,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
